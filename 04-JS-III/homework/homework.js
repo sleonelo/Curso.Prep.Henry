@@ -11,7 +11,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[-1]
+  return array[array.length - 1];
 }
 
 
@@ -39,7 +39,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  array.push(elemento);
+  return array;
 }
 
 
@@ -48,7 +49,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift(elemento);
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -118,7 +120,7 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  
+
 }
 
 
